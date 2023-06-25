@@ -131,6 +131,7 @@ input[type="range"] {
 	-webkit-appearance: none;
 	appearance: none;
 	border-radius: 20px;
+	width: 15px;
 	height: 15px;
 	cursor: pointer;
 	outline: none;
