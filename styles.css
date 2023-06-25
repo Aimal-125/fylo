@@ -141,8 +141,10 @@ input[type="range"] {
 	border-radius: 10%;
 	background: white;
 	height: 15px;
+	width: 15px;
 }
 #range::-moz-range-thumb {
+	width: 15px;
 	height: 15px;
 	border-radius: 10%;
 	background: white;
