@@ -16,29 +16,42 @@
 				<img src="images/logo.svg" alt="Fylo Logo">
 			</div>
 			<div class="icondiv2">
-				<span class="ico1"><img src="images/icon-document.svg"></span>
-				<span class="ico2"><img src="images/icon-folder.svg"></span>
-				<span class="ico3"><img src="images/icon-upload.svg"></span>
+				<span class="ico1"><img src="images/icon-document.svg" alt="document icon"></span>
+				<span class="ico2"><img src="images/icon-folder.svg" alt="folder icon"></span>
+				<span class="ico3"><img src="images/icon-upload.svg" alt="upload icon"></span>
 			</div>
 		</div>
 		<div class="div2">
 			<div class="div5">
 				<div class="div4">
-					<p class="text"><span class="fgb">185</span> <span class="gbl">GB LEFT</span></p>
+					<p class="text"><span class="fgb"><span id="output1"></span></span> <span class="gbl">GB LEFT</span></p>
 					<span class="tr"></span>
 				</div>
 			</div>
 			<div class="div3">
-				<p class="para">You've used <span class="egb">815 GB</span> of your storage</p>
+				<p class="para">You've used <span class="egb"><span id="output"></span> GB</span> of your storage</p>
 				<div class="bar">
-					<div class="innerbar"><span class="innerspan"></span></div>
+					<label for="range" id="rlabel"><input type="range" name="range" value="0" min="0" max="1000" id="range"></label>
 				</div>
 				<div class="gb">
 					<span class="zgb">0 GB</span>
-					<span class="ogb">1000 GB</span>
+					<span class="ogb"><span id="ogb">1000</span> GB</span>
 				</div>
 			</div>
 		</div>
 	</main>
 </body>
+<script>
+	let range = document.getElementById("range");
+	let out = document.getElementById("output");
+	let out1 = document.getElementById("output1");
+	let thousand = 1000;
+	out.innerHTML = range.value;
+	out1.innerHTML = range.value;
+	range.oninput = function() {
+		let diff = thousand - this.value;
+		out.innerHTML = this.value;
+		out1.innerHTML = diff;
+	}
+</script>
 </html>
