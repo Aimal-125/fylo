@@ -12,10 +12,10 @@ body {
 	background: url(images/bg-desktop.png) no-repeat hsl(229, 57%, 11%);
 	background-position: bottom;
 	background-size: 100% 50%;
-	height: 100vh;
+	min-height: 100vh;
 }
 main {
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -23,10 +23,10 @@ main {
 	gap: 1.5rem;
 }
 .div1 {
-	width: 25%;
+	width: 30%;
 	border-radius: 10px;
 	border-top-right-radius: 40%;
-	height: 30%;
+	height: 200px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -44,7 +44,7 @@ main {
 }
 .div2 {
 	width: 45%;
-	height: 30%;
+	height: 200px;
 	display: flex;
 	align-items: flex-end;
 	position: relative;
@@ -54,15 +54,14 @@ main {
 }
 .ico1, .ico2, .ico3 {
 	display: inline-block;
-/*	margin-top: 10%;*/
-width: 40px;
-height: 40px;
-vertical-align: middle;
-position: relative;
-margin-right: 1rem;
-border-radius: 7px;
-background: hsl(229, 57%, 11%);
-cursor: pointer;
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+	position: relative;
+	margin-right: 1rem;
+	border-radius: 7px;
+	background: hsl(229, 57%, 11%);
+	cursor: pointer;
 }
 .ico1 img, .ico2 img, .ico3 img {
 	display: block;
@@ -109,7 +108,7 @@ cursor: pointer;
 	border-right: 20px solid transparent;
 	border-bottom: 30px solid white;
 	bottom: -15px;
-	right: -6px;
+	right: -5px;
 	rotate: 90deg;
 	transform: scale(-1);
 }
@@ -192,11 +191,8 @@ input[type="range"] {
 
 @media screen and (max-height: 575px) {
 	.div5 {
-		top: -70px;
-	}
-	.tr {
-		display: none;
-	}
+		top: -50px;
+	} 
 }
 
 @media screen and (orientation: portrait) {
@@ -209,10 +205,11 @@ input[type="range"] {
 	}
 	.div1 {
 		width: 88%;
+		height: 200px;
 	}
 	.div2 {
 		width: 88%;
-		height: 25%;
+		height: 200px;
 	}
 	.div4 {
 		width: 100%;
@@ -222,7 +219,7 @@ input[type="range"] {
 		top: 90%;
 		transform: translate(50%);
 		height: 100px;
-		width: 50%;
+		width: 60%;
 	}
 	.tr {
 		display: none;
