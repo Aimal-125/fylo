@@ -111,6 +111,8 @@ main {
 	right: -5px;
 	transform: rotate(90deg);
 	transform: scale(-1);
+	-webkit-transform: rotate(90deg);
+	-webkit-transform: scale(-1);
 }
 .bar {
 	width: 100%;
