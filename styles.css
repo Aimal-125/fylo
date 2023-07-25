@@ -111,9 +111,9 @@ main {
 	border-bottom: 30px solid white;
 	bottom: -15px;
 	right: -5px;
-	transform: rotate(180deg);
+	transform: rotate(90deg);
 	transform: scale(-1);
-	-webkit-transform: rotate(180deg);
+	-webkit-transform: rotate(90deg);
 	-webkit-transform: scale(-1);
 }
 .bar {
@@ -196,7 +196,10 @@ input[type="range"] {
 @media screen and (max-height: 575px) {
 	.div5 {
 		top: -50px;
-	} 
+	}
+	.tr {
+		display: none;
+	}
 }
 
 @media screen and (orientation: portrait) {
