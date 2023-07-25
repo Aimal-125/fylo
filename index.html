@@ -48,7 +48,7 @@
 	let out1 = document.getElementById("output1");
 	let thousand = 1000;
 	out.innerHTML = range.value;
-	out1.innerHTML = range.value;
+	out1.innerHTML = thousand;
 	range.oninput = function() {
 		let diff = thousand - this.value;
 		out.innerHTML = this.value;
